@@ -1,0 +1,22 @@
+<view class="container">
+  <image class="background"src="/images/题库背景.jpg" mode="aspectFill"></image>
+    <view class="white-container">
+      <view class="title">810数据结构专项训练</view>
+      <view class="question">
+        <text>{{currentQuestion.index}}. {{currentQuestion.tg}}</text>
+      </view>
+      <view class="options">
+        <block wx:for="{{currentQuestion.xx}}" wx:key="index">
+          <button class="option-button {{selectedOption === item ? (isCorrect ? 'correct' : 'incorrect') : ''}}" bindtap="selectOption" data-option="{{item}}">
+            {{item}}
+          </button>
+        </block>
+      </view>
+      <view class="result" wx:if="{{isCorrect !== null}}">
+        <view class="result-text"><text>{{isCorrect ? '回答正确' : '回答错误'}}</text></view>
+        <view class="result-text"><text>你的答案: {{userAnswer}}</text></view>
+        <view class="result-text"><text>正确答案: {{currentQuestion.zqda}}</text></view>
+      </view>
+      <button class="next-button" bindtap="nextQuestion">下一题</button>
+    </view>
+</view>

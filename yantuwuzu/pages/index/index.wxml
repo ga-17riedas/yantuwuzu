@@ -1,0 +1,30 @@
+<image class="background" src="/images/个人中心背景.jpg" mode="aspectFill"></image>
+<!--顶部搜索栏-->
+<view>
+  <view class="top">
+    <view class="search">
+      <view class="search_in">
+        <image src="/images/search.png"></image>
+        <input type="text" placeholder="请输入搜索内容"/>
+        <view class="search_btn" bindtap="searcher">搜索</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!--轮播图容器-->
+<swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="#1e90ff" autoplay interval="3000" circular>
+  <swiper-item>
+    <view class="swiper-container-item"><image src="/images/index_swiper/首页轮播图1.png" mode="widthFix"></image></view>
+  </swiper-item>
+  <swiper-item>
+    <view class="swiper-container-item"><image src="/images/index_swiper/首页轮播图2.png" mode="widthFix"/></view>
+  </swiper-item>
+  <swiper-item>
+    <view class="swiper-container-item"><image src="/images/index_swiper/首页轮播图3.jpeg" mode="widthFix"/></view>
+  </swiper-item>
+</swiper>
+
+<view>
+  <Grid /> <!-- 使用 Grid 组件 -->
+</view>

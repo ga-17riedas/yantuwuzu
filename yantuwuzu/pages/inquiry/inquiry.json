@@ -1,0 +1,12 @@
+{  
+    "usingComponents": {  
+      "exam-countdown": "/components/examCountdown/examCountdown"  
+    },
+  
+    "navigationBarTitleText": "信息库",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+    
+
+}

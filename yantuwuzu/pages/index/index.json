@@ -1,0 +1,13 @@
+{
+    "usingComponents": {  
+      "Grid": "/components/grid/grid"  
+    } ,
+  
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor":"#2b4b6b",
+    "navigationBarTitleText": "研途无阻",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#4749a0",
+    "enablePullDownRefresh": true
+
+}

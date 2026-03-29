@@ -1,0 +1,12 @@
+<!-- pages/shuoming/shuoming.wxml -->
+<view class="container">
+  <image class="background" src="/images/个人中心背景.jpg" mode="aspectFill"></image>
+  <view class="title">{{title}}</view>
+  <view class="content">{{content}}</view>
+  <block wx:for="{{sections}}" wx:key="index">
+    <view class="section">
+      <view class="heading">{{item.heading}}</view>
+      <view class="content">{{item.content}}</view>
+    </view>
+  </block>
+</view>

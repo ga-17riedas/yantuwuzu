@@ -1,0 +1,17 @@
+<view class="container">
+  <view class="header">
+    <text class="title">模拟考试说明</text>
+  </view>
+  <view class="content">
+    <text>欢迎参加模拟考试！请仔细阅读以下说明：</text>
+    <text>1. 本次考试共有20道题目，题目类型为单选题。</text>
+    <text>2. 每道题目固定5分，答对得分，答错不得分。</text>
+    <text>3. 考试过程中会自动计时，请在30分钟内完成所有题目。</text>
+    <text>4. 每道题目答完后会自动跳转到下一题，可通过点击上方的按钮在题目间跳转。</text>
+    <text>5. 点击“交卷”按钮后，系统会自动计算总分并显示答题情况。只有登录后才能上排行榜。</text>
+    <text>6. 请确保在交卷前完成所有题目，否则无法提交。</text>
+  </view>
+  <view class="footer">
+    <button bindtap="startExam">开始考试</button>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<!-- pages/women/women.wxml -->
+<view class="container">
+  <image class="background" src="/images/个人中心背景.jpg" mode="aspectFill"></image>
+  <view class="title">关于我们</view>
+  <view class="section">
+    <view class="heading">小程序简介</view>
+    <view class="content">“研途无阻考研”小程序是由一群充满激情和梦想的大学生团队开发的。我们致力于为考研学子提供全面、便捷的考研信息查询、题库练习、AI择校推荐等服务。我们的目标是帮助每一位考研人顺利通过考试，实现自己的梦想。</view>
+  </view>
+  <view class="section">
+    <view class="heading">我们的目标</view>
+    <view class="content">我们的目标是通过提供高质量的考研资源和智能化的服务，帮助考生更好地备考，提升学习效率，最终成功考取理想的研究生院校。</view>
+  </view>
+  <view class="section">
+    <view class="heading">团队介绍</view>
+    <view class="content">我们的团队由计算机专业的大学生组成。我们不仅有丰富的考研辅导经验，还具备先进的技术能力。为了参加比赛，我们齐心协力，利用课余时间开发了这款小程序，希望能为广大考研学子提供帮助。</view>
+  </view>
+  <view class="section">
+    <view class="heading">联系我们</view>
+    <view class="content">如果您有任何问题或建议，欢迎通过以下方式联系我们：
+      <view>邮箱: 1583169094@qq.com</view>
+      <view>电话: 17685771720</view>
+      <view>地址: 山东省青岛市西海岸新区灵海路1145号青岛黄海学院</view>
+    </view>
+  </view>
+  <view class="footer">感谢您使用“研途无阻考研”小程序，祝您考研顺利！</view>
+</view>

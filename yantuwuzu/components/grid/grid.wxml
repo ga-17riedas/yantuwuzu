@@ -1,0 +1,7 @@
+<!--components/grid/grid.wxml-->
+<view class="grid">  
+  <view class="grid-item" wx:for="{{gridItems}}" wx:key="*this" bindtap="gridTap" data-index="{{index}}">  
+    <image src="{{item.imgUrl}}" mode="aspectFit" class="grid-item-image" />  
+    <text class="grid-item-text">{{item.text}}</text>  
+  </view>  
+</view>

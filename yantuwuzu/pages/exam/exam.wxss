@@ -1,0 +1,147 @@
+.container {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-position: center;
+  height: 100%; 
+}
+
+.white-container {
+  padding: 10px;
+  background-color: white;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 500px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+}
+
+.question {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.options button {
+  width: 100%;
+  padding: 10px;
+  background-color: lightgray;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+button.selected {
+  background-color: #1aad19;
+  color: white;
+}
+
+.square-button {
+  position: fixed;
+  top: 10px; 
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #225fd1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square-button image {
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer button {
+  padding: 10px;
+  background-color: #1aad19;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.movable-area {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 100%;
+}
+
+.movable-view {
+  width: 30px;
+  height: 30px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navigation button {
+  width: 30px;
+  height: 30px;
+  margin: 3px;
+  background-color: #f0f0f0;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 8px;
+}
+
+.navigation button.current {
+  background-color: #1aad19;
+  color: white;
+}
+
+.navigation button.answered {
+  background-color: #1aad19;
+  color: white;
+}
+
+.toggle-nav {
+  width: 20px;
+  height: 60px;
+  background-color: #1aad19;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 20px;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

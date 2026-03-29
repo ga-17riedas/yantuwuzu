@@ -1,0 +1,22 @@
+/* components/examCountdown.wxss */
+.countdown1{  
+  font-size: 20px;  
+  color: #333;  
+}
+.countdown2{  
+  font-size: 12px;  
+  color: #333;  
+}
+.examCountdown{
+  text-align: center;
+
+  background-color: rgba(28, 118, 148, 0.3);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  padding: 10px;
+  
+  
+}
+

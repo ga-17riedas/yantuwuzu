@@ -1,0 +1,21 @@
+<!--pages/inquiry/inquiry.wxml-->
+<view class="page">
+  <image class="background" src="/images/个人中心背景.jpg" mode="aspectFill"></image>
+
+  <exam-countdown target-date="{{'2024-12-22'}}"></exam-countdown>
+
+  <view class="question_ku">
+    <navigator url="/pages/question/question" open-type="navigate" class="grid-item question">专项训练
+      <span class="subtitle">做题吧！</span> 
+    </navigator>
+    <navigator url="/pages/error_q/error_q" open-type="navigate" class="grid-item error_q">错题集
+      <span class="subtitle">查阅你的错题</span> 
+    </navigator>
+    <navigator url="/pages/chart/chart" open-type="navigate" class="grid-item chart">排行榜
+      <span class="subtitle">刷题排行</span> 
+    </navigator>
+    <navigator url="/pages/exam_begin/exam_begin" open-type="navigate" class="grid-item exam">模拟考试
+      <span class="subtitle">检测自己！</span> 
+    </navigator>
+  </view>
+</view>

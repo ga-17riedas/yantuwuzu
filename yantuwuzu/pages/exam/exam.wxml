@@ -1,0 +1,40 @@
+<view class="container" >
+  <image class="background"src="/images/题库背景.jpg" mode="aspectFill"></image>
+    <view class="white-container">
+      <view class="header">
+        <text> {{questions[currentQuestionIndex].tx}}</text>
+        <view class="countdown">
+          <text>{{minutes}}:{{seconds}}</text>
+        </view>
+        <text>第 {{currentQuestionIndex + 1}} 题</text>
+      </view>
+      <view class="question" wx:if="{{questions.length > 0}}">
+        <text>{{questions[currentQuestionIndex].number}}. {{questions[currentQuestionIndex].tg}}</text>
+        <view class="options">
+          <block wx:for="{{questions[currentQuestionIndex].xx}}" wx:key="index">
+            <button bindtap="selectOption" data-option="{{item}}" class="{{selectedOptions[currentQuestionIndex] === item ? 'selected' : ''}}">
+            {{item}}
+           </button>
+          </block>
+        </view>
+      </view>
+    </view>
+    <button class="square-button" bindtap="toggleNavigation">
+      <image src="/images/question/选项.png" />
+    </button>
+    <view class="footer">
+      <button bindtap="submitExam">交卷</button>
+    </view>
+    <movable-area class="movable-area">
+      <movable-view direction="vertical" class="movable-view">
+        <view class="navigation" wx:if="{{showNavigation}}">
+          <block wx:for="{{questions}}" wx:key="index">
+            <button bindtap="navigateToQuestion" data-index="{{index}}" class="{{selectedOptions[index] ? 'answered' : ''}} {{currentQuestionIndex === index ? 'current' : ''}}">
+            {{index + 1}}
+            </button>
+          </block>
+          <button bindtap="toggleNavigation">收起</button>
+        </view>
+      </movable-view>
+    </movable-area>
+</view>

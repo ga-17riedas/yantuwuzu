@@ -1,0 +1,103 @@
+.index{
+  background-color: rgb(117, 200, 255);
+}
+/*信息框*/
+.school-info {  
+  border-radius: 10px; 
+  padding: 10px;  
+  background-color: #DCDCDC;
+  margin-left: 5px;
+  margin-right: 5px;
+  height: 120px;
+  padding: 10px;
+  margin: 10px;
+}  
+.school-location {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+.school-location text {
+  font-size: 16px;
+  color: #333;
+  margin: 2px 0;
+}
+.name {
+  flex: 1; /* 使name占据可用空间 */
+}
+.name text{
+  font-weight: bold;  
+}
+.address{
+  background-color: gray;
+  display: inline;
+}
+.address text{
+  color: white;
+}
+.shuxing {  
+  display: flex;  
+  flex-direction: column;  
+  align-items: center; /* 内部元素垂直居中 */  
+  padding: 10px;  
+}  
+/*筛选栏*/
+.picker-container{
+  justify-content: right; 
+  display: flex;
+}
+.picker text{
+  font-size: 8px;
+}
+.picker {  
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  background-color: #ffffff;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0 15px; /* 设置内边距，以确保文字不会紧贴边缘 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  line-height: 40px; /* 调整行高，使其与容器高度一致，使文字垂直居中更完美 */
+  margin: 0 auto; /* 自动调整左右边距以居中 */
+}
+/* 新增搜索栏样式 */
+.search {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.search_in {
+  display: flex;
+  align-items: center;
+}
+
+.search_in image {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search_in input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search_btn {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #002fa7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.content {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.content text {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.footer {
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1aad19;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}

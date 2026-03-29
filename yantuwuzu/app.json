@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/inquiry/inquiry",
+    "pages/question_index/question_index",
+    "pages/logs/logs",
+    "pages/schools/schools",
+    "pages/professions/professions",
+    "pages/question/question",
+    "pages/hot_school/hot_school",
+    "pages/AI_choice/AI_choice",
+    "pages/error_q/error_q",
+    "pages/basicInfo/basicInfo",
+    "pages/chart/chart",
+    "pages/exam/exam",
+    "pages/exam_begin/exam_begin",
+    "pages/exam_over/exam_over",
+    "pages/shuoming/shuoming",
+    "pages/women/women",
+    "pages/schoolDetail/schoolDetail",
+    "pages/professionDetail/professionDetail"
+
+  ],
+  "grid": [
+    ""
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#2b4b6b",
+    "navigationBarTitleText": "研途无阻",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#DCDCDC",
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/tabs/index.png",
+        "selectedIconPath": "/images/tabs/index-active.png"
+      },
+      {
+        "pagePath": "pages/inquiry/inquiry",
+        "text": "信息库",
+        "iconPath": "/images/tabs/inquiry.png",
+        "selectedIconPath": "/images/tabs/inquiry-active.png"
+      },
+      {
+        "pagePath": "pages/question_index/question_index",
+        "text": "题库",
+        "iconPath": "/images/tabs/question.png",
+        "selectedIconPath": "/images/tabs/question-active.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "个人中心",
+        "iconPath": "/images/tabs/logs.png",
+        "selectedIconPath": "/images/tabs/logs-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

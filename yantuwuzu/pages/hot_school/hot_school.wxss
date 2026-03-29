@@ -1,0 +1,61 @@
+/* 全局样式 */
+.container {
+  padding: 20px;
+  background-color: rgb(117, 200, 255);
+  min-height: 100vh;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+  background-color: #d3d3d3;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.school-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.school-item {
+  display: flex;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.school-item:hover {
+  transform: scale(1.02);
+}
+
+.school-rank {
+  font-size: 18px;
+  width: 30px;
+  font-weight: bold;
+  color: #007acc;
+}
+
+.school-info {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.school-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.school-title, .school-type, .school-pinggu {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}

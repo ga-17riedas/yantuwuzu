@@ -1,0 +1,78 @@
+/* pages/professions/professions.wxss */
+.container {
+  padding: 20px;
+  background-color: rgb(117, 200, 255);
+}
+
+.search {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.search_in {
+  display: flex;
+  align-items: center;
+}
+
+.search_in image {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search_in input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search_btn {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #002fa7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profession-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profession-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.profession-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.profession-number,
+.profession-type,
+.profession-menlei,
+.profession-yijixueke {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 5px;
+}
+
+.loading {
+  text-align: center;
+  padding: 10px;
+  color: #999999;
+}

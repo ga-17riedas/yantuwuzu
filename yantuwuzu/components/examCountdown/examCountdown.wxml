@@ -1,0 +1,6 @@
+<!--components/examCountdown.wxml-->
+<view class="examCountdown">
+  <view class="countdown1">{{countdown}}</view>
+  <view class="countdown2">距离2025考研还有</view>
+</view>
+

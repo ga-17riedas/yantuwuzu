@@ -1,0 +1,20 @@
+<!--pages/inquiry/inquiry.wxml-->
+<!--顶部搜索栏-->
+<image class="background" src="/images/个人中心背景.jpg" mode="aspectFill"></image>
+
+<exam-countdown target-date="{{'2024-12-22'}}"></exam-countdown>
+
+<view class="info_ku">
+  <navigator url="/pages/schools/schools" open-type="navigate" class="grid-item school">院校库
+    <span class="subtitle">800+院校信息</span> 
+  </navigator>
+  <navigator url="/pages/professions/professions" open-type="navigate" class="grid-item profession">专业库
+    <span class="subtitle">1900+专业信息</span> 
+  </navigator>
+  <navigator url="/pages/AI_choice/AI_choice" open-type="navigate" class="grid-item ai_choice">AI择校
+    <span class="subtitle">专属择校报告</span> 
+  </navigator>
+  <navigator url="/pages/hot_school/hot_school" open-type="navigate" class="grid-item information">热门院校
+    <span class="subtitle">近年热门院校</span> 
+  </navigator>
+</view>

@@ -1,0 +1,56 @@
+/*顶部搜索栏*/
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90rpx;
+  background-color: #f8f8f8;
+}
+.search .search_in {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  padding:0 20rpx ;
+  box-sizing: border-box;
+  height: 70rpx;
+  width: 710rpx;
+  background-color: #ffffff;
+  border-radius: 35rpx;
+  border: 1px solid #ddd; /* 添加边框 */
+}
+.search_in image {
+  height: 45rpx;
+  width: 45rpx;
+}
+.search input {
+  width: 480rpx;
+}
+.search_in .search_btn {
+  height: 55rpx;
+  width: 110rpx;
+  border-radius: 55rpx;
+  background-color: #6cd3ff;
+  color: #ffffff;
+  text-align: center;
+  line-height: 55rpx;
+  cursor: pointer;
+}
+
+/*轮播图容器设置*/
+.swiper-container{
+  height: 150px;/*轮播图容器高度*/
+  width: 100%;
+  margin-top: 10px; /* 添加上边距 */
+}
+.swiper-container-item{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 150px;
+}
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

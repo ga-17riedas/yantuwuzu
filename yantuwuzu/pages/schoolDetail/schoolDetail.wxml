@@ -1,0 +1,113 @@
+<view class="container">
+  <!-- 浅蓝色背景的基本信息容器 -->
+  <view class="info-container">
+    <view class="title">{{school.schoolname}}</view>
+    <view class="item">
+      <text>地址：</text>
+      <text>{{school.schooladdress}}</text>
+    </view>
+    <view class="item">
+      <text>隶属：</text>
+      <text>{{school.belong}}</text>
+    </view>
+    <view class="item">
+      <text>类型：</text>
+      <text>{{school.type}}</text>
+    </view>
+    <view class="item">
+      <text>性质：</text>
+      <text>{{school.title}}</text>
+    </view>
+    <view class="item">
+      <text>官网：</text>
+      <text>{{school.website}}</text>
+    </view>
+  </view>
+  <!-- 新增灰色容器用于分页栏 -->
+  <view class="gray-container">
+    <view class="tab {{currentTab === 'jianjie' ? 'active' : ''}}" bindtap="switchTab" data-tab="jianjie">院校简介</view>
+    <view class="tab {{currentTab === 'zhaosheng' ? 'active' : ''}}" bindtap="switchTab" data-tab="zhaosheng">招生专业</view>
+  </view>
+  <!-- 新增浅灰色背景的内容容器 -->
+  <view class="content-container" wx:if="{{currentTab === 'jianjie'}}">
+    <view class="card">
+      <view class="item">
+        <text>{{school.jianjie}}</text>
+      </view>
+      <view>
+        <text>{{school.jianjie_neirong}}</text>
+      </view>
+    </view>
+    <view class="card">
+      <view class="item">
+        <text>{{school.lingdao}}</text>
+      </view>
+      <view>
+        <text user-select="">{{school.lingdao_neirong}}</text>
+      </view>
+    </view>
+    <view class="card">
+      <view class="item">
+        <text>{{school.huanjing}}</text>
+      </view>
+      <view>
+        <text>{{school.huanjing_neirong}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="content-container" wx:if="{{currentTab === 'zhaosheng'}}">
+    <!-- 新增搜索栏 -->
+    <view class="search">
+      <view class="search_in">
+        <image src="/images/search.png"></image>
+        <input type="text" placeholder="请输入专业名称" bindinput="onSearchInput"/>
+        <view class="search_btn" bindtap="onSearch">搜索</view>
+      </view>
+    </view>
+    <view class="card" wx:for="{{majors}}" wx:key="major_num">
+      <view class="item_title">
+        <text>{{item.major}}</text>
+      </view>
+      <view class="item">
+        <text>开设院校：</text>
+        <text>{{item.schoolname}}</text>
+      </view>
+      <view class="item">
+        <text>门类：</text>
+        <text>{{item.menlei}}</text>
+      </view>
+      <view class="item">
+        <text>一级学科：</text>
+        <text>{{item.yijixueke}}</text>
+      </view>
+      <view class="item">
+        <text>学习方式：</text>
+        <text>{{item.learn_type}}</text>
+      </view>
+      <view class="item">
+        <text>考试方式：</text>
+        <text>{{item.exam_style}}</text>
+      </view>
+      <view class="item">
+        <text>拟录取人数：</text>
+        <text>{{item.enrollment}}</text>
+      </view>
+      <view class="item">
+        <text>专业课1：</text>
+        <text>{{item.class1}}</text>
+      </view>
+      <view class="item">
+        <text>专业课2：</text>
+        <text>{{item.class2}}</text>
+      </view>
+      <view class="item">
+        <text>外语：</text>
+        <text>{{item.language}}</text>
+      </view>
+      <view class="item">
+        <text>政治：</text>
+        <text>{{item.political}}</text>
+      </view>
+    </view>
+  </view>
+</view>

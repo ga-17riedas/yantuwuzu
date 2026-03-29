@@ -1,0 +1,50 @@
+<view class="index">
+  <view class="picker-container">
+    <picker mode="selector" range="{{addressList}}" bindchange="onAddressChange">
+      <view class="picker">
+        {{selectedAddress}}
+      </view>
+    </picker>
+    <picker mode="selector" range="{{belongList}}" bindchange="onBelongChange">
+      <view class="picker">
+        {{selectedBelong}}
+      </view>
+    </picker>
+    <picker mode="selector" range="{{titleList}}" bindchange="onTitleChange">
+      <view class="picker">
+        {{selectedTitle}}
+      </view>
+    </picker>
+  </view>
+  <!-- 新增搜索栏 -->
+  <view class="search">
+    <view class="search_in">
+      <image src="/images/search.png"></image>
+      <input type="text" placeholder="请输入搜索内容" bindinput="onSearchInput"/>
+      <view class="search_btn" bindtap="onSearch">搜索</view>
+    </view>
+  </view>
+  <block wx:for="{{schools}}" wx:key="id">
+    <view class="school-info" bindtap="onSchoolTap" data-id="{{item._id}}">
+      <view class="school-location">
+        <view class="name">
+          <text>{{item.schoolname}}</text>
+        </view>
+        <view class="address">
+          <text>{{item.schooladdress}}</text>
+        </view>
+      </view>
+      <view class="shuxing">
+        <view class="belong">
+          <text>隶属：{{item.belong}}</text>
+        </view>
+        <view class="type">
+          <text>类型：{{item.type}}</text>
+        </view>
+        <view class="title">
+          <text>性质：{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

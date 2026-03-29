@@ -1,0 +1,22 @@
+.container {
+  padding: 20px;
+}
+.input-section {
+  margin-bottom: 20px;
+}
+.input-section input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.result-section .school-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+}
+.picker {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}

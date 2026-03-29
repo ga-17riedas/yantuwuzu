@@ -1,0 +1,109 @@
+.container {
+  padding: 20px;
+  background-color: rgb(117, 200, 255);
+}
+
+.title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content {
+  font-size: 18px;
+}
+
+.item {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.item text:first-child {
+  font-weight: bold;
+}
+
+/* 新增样式 */
+.info-container {
+  background-color: #add8e6; /* 浅蓝色 */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.gray-container {
+  background-color: #d3d3d3; /* 浅灰色 */
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.tab {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+}
+
+.tab.active {
+  color: white;
+  background-color: #002fa7; /* 克莱因蓝 */
+  border-bottom: 2px solid #002fa7; /* 蓝色底线 */
+}
+
+.content-container {
+  background-color: #f0f0f0; /* 浅灰色 */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 新增搜索栏样式 */
+.search {
+  margin-bottom: 20px;
+}
+
+.search_in {
+  display: flex;
+  align-items: center;
+}
+
+.search_in image {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.search_in input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search_btn {
+  padding: 10px;
+  margin-left: 10px;
+  background-color: #002fa7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.item_title{
+  font-weight: bold;
+  font-size: 18px;
+  padding-bottom: 15px;
+}

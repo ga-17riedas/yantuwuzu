@@ -1,0 +1,30 @@
+<!-- pages/basicInfo/basicInfo.wxml -->
+<image class="background" src="/images/个人中心背景.jpg" mode="aspectFill"></image>
+<view class="container">
+  
+  <!-- 年级 -->
+  <view class="info-item">
+    <text>年级：</text>
+    <picker mode="selector" range="{{grades}}" value="{{gradeIndex}}" bindchange="bindGradeChange">
+      <view class="picker">
+        {{grades[gradeIndex]}}
+      </view>
+    </picker>
+  </view>
+  <!-- 目标院校 -->
+  <view class="info-item">
+    <text>目标院校：</text>
+    <input type="text" class="search-input" placeholder="搜索院校" bindinput="onSearchInput" />
+    <picker mode="selector" range="{{filteredSchools}}" range-key="schoolname" value="{{schoolIndex}}" bindchange="bindSchoolChange">
+      <view class="picker large-picker">
+        {{filteredSchools[schoolIndex].schoolname}}
+      </view>
+    </picker>
+  </view>
+  <!-- 目前在读学校 -->
+  <view class="info-item">
+    <text>目前在读学校：</text>
+    <input type="text" class="editable-input" value="{{userInfo.currentSchool}}" bindblur="saveField" data-field="currentSchool" />
+  </view>
+  <button bindtap="saveAllInfo">保存</button>
+</view>

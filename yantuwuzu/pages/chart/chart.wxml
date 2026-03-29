@@ -1,0 +1,31 @@
+<view class="container">
+  <image class="background" src="/images/排行榜背景.jpg" mode="aspectFill"></image>
+  <view class="ranking-container">
+    <view class="ranking-header">
+      <text>排名</text>
+      <text>头像+用户名</text>
+      <text>分数</text>
+      <text>用时</text>
+    </view>
+    <block wx:for="{{indices}}" wx:key="index">
+      <view class="ranking-item">
+        <view class="ranking-index">
+          <text class="{{index < 3 ? 'top-rank' : ''}}">{{index + 1}}</text>
+          <image wx:if="{{index === 0}}" class="medal" src="/images/chart/第一.png"></image>
+          <image wx:if="{{index === 1}}" class="medal" src="/images/chart/第二.png"></image>
+          <image wx:if="{{index === 2}}" class="medal" src="/images/chart/第三.png"></image>
+        </view>
+        <view class="user-info">
+          <image wx:if="{{rankings[index]}}" class="avatar" src="{{rankings[index].avatarUrl}}"></image>
+          <text wx:if="{{rankings[index]}}">{{rankings[index].nickname}}</text>
+        </view>
+        <text wx:if="{{rankings[index]}}">{{rankings[index].score}}</text>
+        <text wx:if="{{rankings[index]}}">{{rankings[index].time}}</text>
+      </view>
+    </block>
+    <view class="my-ranking">
+      <text wx:if="{{myRanking === '未上榜'}}">我的排名: 未上榜</text>
+      <text wx:else>我的排名: {{myRanking}} | 分数: {{myScore}} | 用时: {{myTime}}</text>
+    </view>
+  </view>
+</view>

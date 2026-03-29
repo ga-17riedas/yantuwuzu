@@ -1,0 +1,36 @@
+<view class="page">
+  <image class="background" src="/images/个人中心背景.jpg" mode="aspectFill"></image>
+  
+  <!-- 上半 -->
+  <view class='profile'>
+    <image bindtap="logout" class="pro" wx:if='{{username.length !== 0}}' src="{{userprofile}}"></image>
+    <text wx:if='{{username.length !== 0}}'>{{username}}</text>
+    <image bindtap="basicInfo" class="exit" wx:if='{{username.length !== 0}}' src="/images/gerenzhongxin/set.png"></image>
+    <button bindtap="login" wx:if='{{username.length== 0}}' class="login-button">录登</button>
+  </view>
+
+  <!-- 下半 -->
+  <view class="control">
+    <button bindtap='gotoShuoming' class="row" style="width: 90%;">
+      <text>使用说明</text>
+    </button>
+    <button bindtap='gotoWomen' class="row" style="width: 90%;">
+      <text>关于我们</text>
+    </button>
+    <button bindtap='gotoBasicInfo' class="row" style="width: 90%;">
+      <text>基本信息</text>
+    </button>
+    <button open-type="share" class="row" style="width: 90%;">
+      <view class="left">
+        <text class="text">分享好友</text>
+      </view>
+    </button>
+    <button open-type="contact" class="row" style="width: 90%;border-bottom: none;">
+      <view class="left">
+        <text class="text">在线客服</text>
+      </view>
+    </button>
+  </view>
+  <!--底部-->
+  <view class="bottom">@研途无阻</view>
+</view>

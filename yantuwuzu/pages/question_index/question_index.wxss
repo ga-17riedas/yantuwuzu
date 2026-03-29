@@ -1,0 +1,58 @@
+/* pages/inquiry/inquiry.wxss */
+
+.question_ku {  
+  display: flex;  
+  flex-wrap: wrap;  
+  justify-content: space-around; /* 或者使用 space-between, flex-start 等根据需求调整 */  
+  padding: 10px; /* 根据需要添加内边距 */  
+  background-color: lightgray;
+  border-radius: 15px;
+  margin-bottom: 10px; 
+  margin-left: 10px;
+  margin-right: 10px;
+  
+
+
+}  
+.grid-item{
+  width: 48%; /* 使用48%或稍小的值以留出一些空间，避免子元素互相挤压 */  
+  height: 48%;
+  box-sizing: border-box; /* 让padding和border包含在width内 */  
+  padding: 10px; /* 子元素的内边距 */  
+  text-align: center; /* 如果需要文字居中 */  
+  background-color: cadetblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 15px;
+  margin-top: 30px; /* 上方空隙 */  
+  margin-bottom: 30px; 
+}  
+
+.question {  
+  background-color: cadetblue;  
+}  
+  
+.error_q {  
+  background-color: cornflowerblue;  
+}  
+  
+.chart {  
+  background-color: darkorange;  
+}  
+  
+.exam {  
+  background-color: darkseagreen;  
+}
+.subtitle {  
+  font-size: 14px; /* 或者其他你想要的较小字号 */  
+  display: block; /* 如果需要换行显示 */  
+  margin-bottom: 5px; /* 与主标题之间的间距 */  
+  color: #666; /* 可选，设置子标题的颜色 */  
+} 
+.background {
+  
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}

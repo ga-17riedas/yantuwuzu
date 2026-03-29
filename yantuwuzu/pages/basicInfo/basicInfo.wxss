@@ -1,0 +1,40 @@
+/* pages/basicInfo/basicInfo.wxss */
+.container{
+  padding: 20px;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.info-item {
+  margin-bottom: 20px;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.info-item text:first-child {
+  color: #333;
+  font-weight: bold;
+}
+
+.editable-input, .picker {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.editable-input:focus, .picker:focus {
+  border-color: #007aff;
+  background-color: #e0f7ff;
+}
+
+.large-picker {
+  height: 30px; /* 调整选择框的高度 */
+  font-size: 18px; /* 调整选择框的字体大小 */
+}

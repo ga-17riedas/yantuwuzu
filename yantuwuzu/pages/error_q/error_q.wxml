@@ -1,0 +1,22 @@
+<view class="container">
+  <image class="background"src="/images/题库背景.jpg" mode="aspectFill"></image>
+    <view class="white-container">
+      <view class="header">
+        <text wx:if="{{!loggedIn}}">用户未登录请先登录</text>
+        <text wx:elif="{{totalQuestions === 0}}">所有错题均已刷完！</text>
+        <text wx:else>题目 {{currentQuestionIndex + 1}} / {{totalQuestions}}</text>
+      </view>
+      <view class="question" wx:if="{{loggedIn && totalQuestions > 0}}">
+        <text>题型: {{currentQuestion.cttx}}</text>
+        <text>题干: {{currentQuestion.cttg}}</text>
+        <block wx:for="{{currentQuestion.ctxx}}" wx:key="index">
+          <button bindtap="selectOption" data-option="{{item}}" class="{{selectedOption === item ? 'selected' : ''}}">
+          {{item}}
+          </button>
+        </block>
+      </view>
+      <view class="footer" wx:if="{{loggedIn && totalQuestions > 0}}">
+        <button bindtap="nextQuestion">下一题</button>
+      </view>
+    </view>
+</view>

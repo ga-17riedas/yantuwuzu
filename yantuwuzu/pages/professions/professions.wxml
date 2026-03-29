@@ -1,0 +1,24 @@
+<!-- pages/professions/professions.wxml -->
+<view class="container">
+  <!-- 搜索框 -->
+  <view class="search">
+    <view class="search_in">
+      <image src="/images/search.png"></image>
+      <input type="text" placeholder="请输入搜索内容" bindinput="onSearchInput"/>
+      <view class="search_btn" bindtap="onSearch">搜索</view>
+    </view>
+  </view>
+
+  <!-- 专业列表 -->
+  <view wx:for="{{professions}}" wx:key="profession_number" class="profession-item" bindtap="goToDetail" data-profession="{{item.profession_name}}">
+    <view class="profession-content">
+      <text class="profession-name">{{item.profession_name}}</text>
+      <text class="profession-number">编号: {{item.major_number}}</text>
+      <text class="profession-type">类型: {{item.profession_type}}</text>
+      <text class="profession-menlei">门类: {{item.menlei}}</text>
+      <text class="profession-yijixueke">一级学科: {{item.yijixueke}}</text>
+    </view>
+  </view>
+  <view wx:if="{{loadMore}}" class="loading">加载更多...</view>
+  <view wx:if="{{loadAll}}" class="loading">已加载全部数据</view>
+</view>

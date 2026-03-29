@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="input-section">
+    <picker mode="selector" range="{{rankOptions}}" bindchange="onRankChange">
+      <view class="picker">
+        选择专业成绩位置：{{rankOptions[rankIndex]}}
+      </view>
+    </picker>
+    <input placeholder="请输入你的目标专业" bindinput="onInputMajor" />
+    <input placeholder="请输入你想去的地区" bindinput="onInputRegion" />
+    <button bindtap="onSubmit">提交</button>
+  </view>
+  <view class="result-section">
+    <block wx:for="{{schoolList}}" wx:key="index">
+      <view class="school-item">
+        <text>{{item.schoolname}}</text>
+        <text>{{item.details}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="report-section">
+    <text>{{report}}</text>
+  </view>
+</view>

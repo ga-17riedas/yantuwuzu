@@ -1,0 +1,27 @@
+<view class="container" style="background-image: url('/images/背景.jpg'); background-size: cover; background-position: center;">
+  <view class="white-container">
+    <view class="header">
+      <text>考试结束</text>
+    </view>
+    <view class="score">
+      <text>您的得分: {{score}}</text>
+    </view>
+    <view class="time">
+      <text>用时: {{time}} 秒</text>
+    </view>
+    <view class="questions">
+      <text>试卷题目:</text>
+      <block wx:for="{{questions}}" wx:key="index">
+        <view class="question">
+          <text>{{index + 1}} ({{item.tx}}) {{item.tg}}</text>
+          <block wx:for="{{item.xx}}" wx:key="index">
+            <text>选项: {{item}}</text>
+          </block>
+          <text>正确答案: {{item.zqda}} <text class="{{item.userAnswer === item.zqda ? 'correct' : 'incorrect'}}">我的答案：{{item.userAnswer}} ({{item.userAnswer === item.zqda ? '正确' : '错误'}})</text></text>
+          <button bindtap="addToCuoti" data-question="{{item}}">加入错题集</button>
+        </view>
+      </block>
+    </view>
+    <button class="rank-button" bindtap="viewRankings">查看排行榜</button>
+  </view>
+</view>

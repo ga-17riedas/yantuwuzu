@@ -1,0 +1,38 @@
+<view class="container">
+  <view class="detail-item">
+    <text class="label">专业名称:</text>
+    <text class="value">{{profession.profession_name}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">专业编号:</text>
+    <text class="value">{{profession.major_num}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">门类:</text>
+    <text class="value">{{profession.menlei}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">一级学科:</text>
+    <text class="value">{{profession.yijixueke}}</text>
+  </view>
+  <view class="detail-item">
+    <text class="label">类型:</text>
+    <text class="value">{{profession.profession_type}}</text>
+  </view>
+  <view class="school-list">
+    <text class="label">开设院校及研究方向:</text>
+    <view wx:for="{{schools}}" wx:key="schoolname" class="school-item">
+      <view class="school-name">{{item.schoolname}}</view>
+      <view class="school-direaction">{{item.direaction}}</view>
+      <view class="additional-details">
+        <view><text>考试方式: {{item.exam_style}}</text></view>
+        <view><text>学习类型: {{item.learn_type}}</text></view>
+        <view><text>语言: {{item.language}}</text></view>
+        <view><text>政治: {{item.political}}</text></view>
+        <view><text>课程1: {{item.class1}}</text></view>
+        <view><text>课程2: {{item.class2}}</text></view>
+        <view><text>招生人数: {{item.enrollment}}</text></view>
+      </view>
+    </view>
+  </view>
+</view>

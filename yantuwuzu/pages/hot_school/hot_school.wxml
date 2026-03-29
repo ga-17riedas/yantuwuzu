@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="page-title">热门院校</view>
+  <view class="school-list">
+    <block wx:for="{{schools}}" wx:key="schoolname">
+      <view class="school-item" bindtap="goToDetail" data-school="{{item}}">
+        <view class="school-rank">{{index + 1}}</view>
+        <view class="school-info">
+          <view class="school-name">{{item.schoolname}}</view>
+          <view class="school-title">{{item.title}}</view>
+          <view class="school-type">{{item.type}}</view>
+          <view class="school-pinggu">{{item.pinggu}}</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

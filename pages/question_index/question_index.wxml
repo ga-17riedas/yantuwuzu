@@ -1,0 +1,42 @@
+<view class="page lib-page">
+  <view class="page-intro">
+    <view class="page-title">题库</view>
+    <view class="page-desc">每天做一点，比临考突击更稳。</view>
+  </view>
+
+  <navigator url="/pages/exam_begin/exam_begin" class="exam-hero">
+    <view>
+      <view class="exam-kicker">限时检测</view>
+      <view class="exam-title">模拟考试</view>
+      <view class="exam-desc">20 道题，30 分钟，做完能看排名</view>
+    </view>
+    <view class="exam-go">开始</view>
+  </navigator>
+
+  <view class="menu">
+    <navigator url="/pages/question/question" class="menu-item">
+      <image class="menu-icon" src="/images/question_page/开始做题.png" mode="aspectFit"></image>
+      <view class="menu-text">
+        <view class="menu-title">专项训练</view>
+        <view class="menu-desc">810 数据结构，逐题练习</view>
+      </view>
+      <text class="chev">›</text>
+    </navigator>
+    <navigator url="/pages/error_q/error_q" class="menu-item">
+      <image class="menu-icon" src="/images/question_page/错题集.png" mode="aspectFit"></image>
+      <view class="menu-text">
+        <view class="menu-title">错题集</view>
+        <view class="menu-desc">错过的题，回来再做一遍</view>
+      </view>
+      <text class="chev">›</text>
+    </navigator>
+    <navigator url="/pages/chart/chart" class="menu-item last">
+      <image class="menu-icon" src="/images/question_page/排行榜.png" mode="aspectFit"></image>
+      <view class="menu-text">
+        <view class="menu-title">排行榜</view>
+        <view class="menu-desc">看自己刷到第几名</view>
+      </view>
+      <text class="chev">›</text>
+    </navigator>
+  </view>
+</view>

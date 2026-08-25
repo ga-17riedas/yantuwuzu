@@ -1,0 +1,178 @@
+.home {
+  padding: 8rpx 32rpx 48rpx;
+}
+
+.home-top {
+  padding: 12rpx 0 28rpx;
+}
+
+.greet {
+  font-size: 48rpx;
+  font-weight: 700;
+  letter-spacing: 2rpx;
+}
+
+.greet-sub {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: #8A857C;
+}
+
+.days {
+  color: #E24B2D;
+  font-weight: 700;
+}
+
+.search-placeholder {
+  color: #A39E96;
+  font-size: 28rpx;
+}
+
+.notice-list {
+  margin-top: 16rpx;
+}
+
+.notice-bar {
+  display: flex;
+  align-items: center;
+  height: 64rpx;
+  margin-bottom: 10rpx;
+  padding: 0 12rpx 0 16rpx;
+  background: #FDE8E2;
+  border-radius: 16rpx;
+}
+
+.notice-bar:last-child {
+  margin-bottom: 0;
+}
+
+.notice-tag {
+  flex-shrink: 0;
+  margin-right: 16rpx;
+  color: #C0371D;
+  font-size: 22rpx;
+  font-weight: 700;
+}
+
+.notice-viewport {
+  flex: 1;
+  overflow: hidden;
+  height: 64rpx;
+}
+
+.notice-track {
+  display: inline-flex;
+  align-items: center;
+  height: 64rpx;
+  white-space: nowrap;
+  animation: notice-scroll 32s linear infinite;
+}
+
+.notice-text {
+  padding-right: 96rpx;
+  color: #8A5A4E;
+  font-size: 22rpx;
+}
+
+@keyframes notice-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.banner-wrap {
+  height: 280rpx;
+  margin: 24rpx 0 8rpx;
+  border-radius: 24rpx;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.banner {
+  height: 280rpx;
+}
+
+.banner image {
+  width: 100%;
+  height: 280rpx;
+  display: block;
+  pointer-events: none;
+}
+
+.home-main {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-row {
+  display: flex;
+  margin: 28rpx 0 36rpx;
+}
+
+.cta {
+  flex: 1;
+  padding: 28rpx 24rpx;
+  border-radius: 24rpx;
+}
+
+.cta-exam {
+  margin-right: 16rpx;
+  background: #E24B2D;
+  color: #fff;
+}
+
+.cta-ai {
+  background: #161616;
+  color: #F5F3EF;
+}
+
+.cta-title {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.cta-desc {
+  margin-top: 6rpx;
+  font-size: 22rpx;
+  opacity: 0.78;
+}
+
+.hot-scroll {
+  white-space: nowrap;
+  margin: 0 -32rpx;
+  padding: 0 32rpx 12rpx;
+}
+
+.hot-card {
+  display: inline-block;
+  width: 240rpx;
+  margin-right: 16rpx;
+  padding: 24rpx;
+  background: #fff;
+  border-radius: 24rpx;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.hot-rank {
+  font-size: 22rpx;
+  color: #E24B2D;
+  font-weight: 700;
+}
+
+.hot-name {
+  margin-top: 12rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.hot-meta {
+  margin-top: 8rpx;
+  font-size: 22rpx;
+  color: #8A857C;
+}

@@ -1,0 +1,127 @@
+page {
+  background: #F5F3EF;
+  color: #161616;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", sans-serif;
+  font-size: 28rpx;
+  line-height: 1.5;
+}
+
+.page {
+  min-height: 100vh;
+  background: #F5F3EF;
+  box-sizing: border-box;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.yt-search {
+  display: flex;
+  align-items: center;
+  height: 76rpx;
+  padding: 0 8rpx 0 24rpx;
+  background: #EBE7E0;
+  border-radius: 18rpx;
+}
+
+.yt-search image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 12rpx;
+  flex-shrink: 0;
+  opacity: 0.45;
+}
+
+.yt-search input {
+  flex: 1;
+  height: 76rpx;
+  font-size: 28rpx;
+  color: #161616;
+}
+
+.yt-search-btn {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0 24rpx;
+  border-radius: 14rpx;
+  background: #161616;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+.yt-card {
+  background: #fff;
+  border-radius: 28rpx;
+}
+
+.yt-btn {
+  margin: 0;
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-radius: 18rpx;
+  background: #E24B2D;
+  color: #fff;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.yt-btn::after,
+button::after {
+  border: none;
+}
+
+.yt-btn-ghost {
+  background: #161616;
+  color: #fff;
+}
+
+.yt-chip {
+  display: inline-block;
+  padding: 4rpx 14rpx;
+  margin-right: 10rpx;
+  margin-top: 10rpx;
+  border-radius: 8rpx;
+  background: #F5F3EF;
+  color: #6F6A63;
+  font-size: 22rpx;
+}
+
+.yt-chip-accent {
+  background: #FDE8E2;
+  color: #C0371D;
+}
+
+.section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8rpx 4rpx 20rpx;
+}
+
+.section-title {
+  font-size: 34rpx;
+  font-weight: 700;
+  letter-spacing: 1rpx;
+}
+
+.section-more {
+  font-size: 24rpx;
+  color: #8A857C;
+}
+
+.mark {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 20rpx;
+  background: #161616;
+  color: #F5F3EF;
+  font-size: 30rpx;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+button {
+  font-weight: 500;
+}

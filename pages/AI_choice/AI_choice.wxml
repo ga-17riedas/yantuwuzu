@@ -1,0 +1,55 @@
+<view class="page ai-page">
+  <view class="yt-card form-card">
+    <view class="form-title">AI 择校</view>
+    <view class="form-desc">填模拟分数和目标专业，按冲刺 / 稳妥 / 保底给你一份报告。</view>
+
+    <picker mode="selector" range="{{undergradOptions}}" bindchange="onUndergradChange">
+      <view class="form-field">本科层次：{{undergradOptions[undergradIndex]}}</view>
+    </picker>
+    <input class="form-field" type="number" placeholder="模拟分数，如 355（满分 500）" bindinput="onInputScore" value="{{score}}" />
+    <input class="form-field" placeholder="目标专业，如软件工程" bindinput="onInputMajor" value="{{major}}" />
+    <input class="form-field" placeholder="意向地区，可留空表示不限" bindinput="onInputRegion" value="{{region}}" />
+    <button class="yt-btn" loading="{{loading}}" bindtap="onSubmit">生成择校报告</button>
+  </view>
+
+  <view wx:if="{{hasResult}}">
+    <view class="yt-card report-card">
+      <view class="report-head">
+        <view class="form-title">择校报告</view>
+        <view class="ai-tag" wx:if="{{usedAI}}">DeepSeek</view>
+        <view class="ai-tag ghost" wx:else>规则推荐</view>
+      </view>
+      <text class="report-text">{{report}}</text>
+    </view>
+
+    <view class="group" wx:if="{{groups.sprint.length}}">
+      <view class="group-label">冲刺</view>
+      <view class="yt-card school-item" wx:for="{{groups.sprint}}" wx:key="itemKey">
+        <view class="school-name">{{item.schoolname}}</view>
+        <view class="school-meta">{{item.profession_name || item.major}} · {{item.region || '地区未知'}}</view>
+        <view class="school-meta" wx:if="{{item.direaction}}">{{item.direaction}}</view>
+        <view class="school-meta" wx:if="{{item.enrollment}}">{{item.enrollment}} · {{item.exam_style}}</view>
+      </view>
+    </view>
+
+    <view class="group" wx:if="{{groups.stable.length}}">
+      <view class="group-label">稳妥</view>
+      <view class="yt-card school-item" wx:for="{{groups.stable}}" wx:key="itemKey">
+        <view class="school-name">{{item.schoolname}}</view>
+        <view class="school-meta">{{item.profession_name || item.major}} · {{item.region || '地区未知'}}</view>
+        <view class="school-meta" wx:if="{{item.direaction}}">{{item.direaction}}</view>
+        <view class="school-meta" wx:if="{{item.enrollment}}">{{item.enrollment}} · {{item.exam_style}}</view>
+      </view>
+    </view>
+
+    <view class="group" wx:if="{{groups.safe.length}}">
+      <view class="group-label">保底</view>
+      <view class="yt-card school-item" wx:for="{{groups.safe}}" wx:key="itemKey">
+        <view class="school-name">{{item.schoolname}}</view>
+        <view class="school-meta">{{item.profession_name || item.major}} · {{item.region || '地区未知'}}</view>
+        <view class="school-meta" wx:if="{{item.direaction}}">{{item.direaction}}</view>
+        <view class="school-meta" wx:if="{{item.enrollment}}">{{item.enrollment}} · {{item.exam_style}}</view>
+      </view>
+    </view>
+  </view>
+</view>

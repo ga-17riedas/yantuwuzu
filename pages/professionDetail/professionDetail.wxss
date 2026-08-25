@@ -1,0 +1,44 @@
+.detail-page {
+  padding: 24rpx 32rpx 48rpx;
+}
+
+.info-card,
+.school-item {
+  padding: 32rpx 28rpx;
+  margin-bottom: 16rpx;
+}
+
+.major-title,
+.school-name {
+  margin-bottom: 16rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.school-direaction {
+  margin-bottom: 16rpx;
+  color: #E24B2D;
+  font-size: 26rpx;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 10rpx;
+  font-size: 26rpx;
+}
+
+.info-row text:first-child {
+  width: 140rpx;
+  color: #8A857C;
+  flex-shrink: 0;
+}
+
+.info-row text:last-child {
+  flex: 1;
+}
+
+.section-label {
+  margin: 12rpx 8rpx 16rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+}

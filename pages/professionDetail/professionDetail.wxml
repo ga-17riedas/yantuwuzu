@@ -1,0 +1,22 @@
+<view class="page detail-page">
+  <view class="yt-card info-card">
+    <view class="major-title">{{profession.profession_name}}</view>
+    <view class="info-row"><text>专业编号</text><text>{{profession.major_num}}</text></view>
+    <view class="info-row"><text>门类</text><text>{{profession.menlei}}</text></view>
+    <view class="info-row"><text>一级学科</text><text>{{profession.yijixueke}}</text></view>
+    <view class="info-row"><text>类型</text><text>{{profession.profession_type}}</text></view>
+  </view>
+
+  <view class="section-label">开设院校及研究方向</view>
+  <view wx:for="{{schools}}" wx:key="schoolname" class="yt-card school-item">
+    <view class="school-name">{{item.schoolname}}</view>
+    <view class="school-direaction">{{item.direaction}}</view>
+    <view class="info-row"><text>考试方式</text><text>{{item.exam_style}}</text></view>
+    <view class="info-row"><text>学习类型</text><text>{{item.learn_type}}</text></view>
+    <view class="info-row"><text>外语</text><text>{{item.language}}</text></view>
+    <view class="info-row"><text>政治</text><text>{{item.political}}</text></view>
+    <view class="info-row"><text>课程 1</text><text>{{item.class1}}</text></view>
+    <view class="info-row"><text>课程 2</text><text>{{item.class2}}</text></view>
+    <view class="info-row"><text>招生人数</text><text>{{item.enrollment}}</text></view>
+  </view>
+</view>

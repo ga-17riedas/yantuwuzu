@@ -1,0 +1,111 @@
+.exam-page {
+  padding: 24rpx 24rpx 48rpx;
+}
+
+.exam-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22rpx 28rpx;
+  margin-bottom: 20rpx;
+  font-size: 26rpx;
+  color: #5C574F;
+}
+
+.countdown {
+  font-size: 32rpx;
+  font-weight: 700;
+  color: #E24B2D;
+}
+
+.exam-card {
+  padding: 32rpx 28rpx;
+}
+
+.question-text {
+  margin-bottom: 28rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.option-button {
+  width: 100%;
+  margin: 0 0 16rpx;
+  padding: 24rpx;
+  background: #F5F3EF;
+  color: #1F2A37;
+  border-radius: 16rpx;
+  text-align: left;
+  font-size: 28rpx;
+  line-height: 1.5;
+  white-space: normal;
+}
+
+.option-button.selected {
+  background: #161616;
+  color: #fff;
+}
+
+.exam-actions {
+  display: flex;
+  margin-top: 24rpx;
+}
+
+.exam-actions .yt-btn {
+  flex: 1;
+  width: auto;
+  margin: 0 8rpx;
+}
+
+.nav-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(15, 23, 42, 0.35);
+  z-index: 20;
+}
+
+.nav-sheet {
+  position: fixed;
+  left: 24rpx;
+  right: 24rpx;
+  bottom: 32rpx;
+  z-index: 21;
+  padding: 28rpx;
+}
+
+.nav-title {
+  margin-bottom: 16rpx;
+  font-weight: 700;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20rpx;
+}
+
+.nav-dot {
+  width: 72rpx;
+  height: 72rpx;
+  margin: 8rpx;
+  line-height: 72rpx;
+  padding: 0;
+  background: #F5F3EF;
+  color: #6F6A63;
+  border-radius: 16rpx;
+  font-size: 24rpx;
+}
+
+.nav-dot.answered {
+  background: #E24B2D;
+  color: #fff;
+}
+
+.nav-dot.current {
+  background: #161616;
+  color: #fff;
+}

@@ -1,0 +1,10 @@
+<view class="page exam-begin">
+  <view class="yt-card intro-card">
+    <view class="intro-title">模拟考试说明</view>
+    <view class="intro-item">1. 共 20 道单选题，每题 5 分，答对得分。</view>
+    <view class="intro-item">2. 考试限时 30 分钟，时间到将自动交卷。</view>
+    <view class="intro-item">3. 答完一题会进入下一题，也可通过答题卡跳转。</view>
+    <view class="intro-item">4. 全部作答后才能交卷；登录后成绩可上榜。</view>
+  </view>
+  <button class="yt-btn start-btn" bindtap="startExam">开始考试</button>
+</view>

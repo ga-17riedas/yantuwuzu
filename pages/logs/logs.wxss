@@ -1,0 +1,87 @@
+.me-page {
+  padding: 24rpx 32rpx 80rpx;
+}
+
+.me-head {
+  display: flex;
+  align-items: center;
+  padding: 12rpx 8rpx 36rpx;
+}
+
+.avatar,
+.fallback {
+  width: 112rpx;
+  height: 112rpx;
+  border-radius: 36rpx;
+  margin-right: 24rpx;
+}
+
+.fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #161616;
+  color: #F5F3EF;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.me-meta {
+  flex: 1;
+}
+
+.me-name {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.me-desc {
+  margin-top: 6rpx;
+  font-size: 24rpx;
+  color: #8A857C;
+}
+
+.login-mini {
+  margin: 0;
+  width: auto !important;
+  padding: 0 28rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  background: #E24B2D;
+  color: #fff;
+  font-size: 26rpx;
+  border-radius: 999rpx;
+}
+
+.menu {
+  margin-bottom: 20rpx;
+  background: #fff;
+  border-radius: 28rpx;
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100% !important;
+  margin: 0;
+  padding: 0 28rpx;
+  height: 108rpx;
+  line-height: 108rpx;
+  background: #fff;
+  border-radius: 0;
+  text-align: left;
+  font-size: 30rpx;
+  color: #161616;
+  border-bottom: 1rpx solid #F0ECE6;
+}
+
+.menu-item.last {
+  border-bottom: none;
+}
+
+.chev {
+  color: #C4BEB4;
+  font-size: 40rpx;
+}

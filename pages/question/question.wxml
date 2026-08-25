@@ -1,0 +1,19 @@
+<view class="page quiz-page">
+  <view class="yt-card quiz-card">
+    <view class="quiz-kicker">810 数据结构专项训练</view>
+    <view class="question-text" wx:if="{{currentQuestion.tg}}">{{currentQuestion.index}}. {{currentQuestion.tg}}</view>
+    <view class="options">
+      <block wx:for="{{currentQuestion.xx}}" wx:key="*this">
+        <button class="option-button {{selectedOption === item ? (isCorrect ? 'correct' : 'incorrect') : ''}}" bindtap="selectOption" data-option="{{item}}">
+          {{item}}
+        </button>
+      </block>
+    </view>
+    <view class="result" wx:if="{{isCorrect !== null}}">
+      <view class="result-title">{{isCorrect ? '回答正确' : '回答错误'}}</view>
+      <view>你的答案：{{userAnswer}}</view>
+      <view>正确答案：{{currentQuestion.zqda}}</view>
+    </view>
+    <button class="yt-btn next-button" bindtap="nextQuestion">下一题</button>
+  </view>
+</view>

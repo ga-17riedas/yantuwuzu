@@ -1,0 +1,50 @@
+.quiz-page {
+  padding: 24rpx;
+}
+
+.quiz-card {
+  padding: 36rpx 28rpx;
+}
+
+.header {
+  margin-bottom: 24rpx;
+  text-align: left;
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #161616;
+}
+
+.q-type {
+  margin-bottom: 12rpx;
+  color: #8A857C;
+  font-size: 24rpx;
+}
+
+.q-title {
+  margin-bottom: 24rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.option-button {
+  width: 100%;
+  margin: 0 0 16rpx;
+  padding: 24rpx;
+  background: #F5F3EF;
+  color: #1F2A37;
+  border-radius: 16rpx;
+  text-align: left;
+  font-size: 28rpx;
+  white-space: normal;
+  line-height: 1.5;
+}
+
+.option-button.selected {
+  background: #161616;
+  color: #fff;
+}
+
+.yt-btn {
+  margin-top: 12rpx;
+}

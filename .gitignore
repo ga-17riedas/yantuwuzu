@@ -1,0 +1,25 @@
+# Windows
+[Dd]esktop.ini
+Thumbs.db
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+
+# Node.js
+node_modules/
+miniprogram_npm/
+
+# 本地后端
+server/.env
+server/data/*.db
+server/data/*.db-wal
+server/data/*.db-shm
+
+# 微信 / 系统
+.cloudbase/
+project.private.config.json

@@ -1,0 +1,88 @@
+.chart-page {
+  padding: 24rpx 32rpx 160rpx;
+}
+
+.ranking-card {
+  padding: 8rpx 4rpx;
+}
+
+.ranking-header,
+.ranking-item {
+  display: flex;
+  align-items: center;
+  padding: 18rpx 20rpx;
+  font-size: 24rpx;
+}
+
+.ranking-header {
+  color: #8A857C;
+  font-weight: 700;
+}
+
+.ranking-item {
+  margin: 0 8rpx 8rpx;
+  background: #F5F3EF;
+  border-radius: 18rpx;
+}
+
+.col-rank {
+  width: 90rpx;
+  text-align: center;
+}
+
+.col-user {
+  flex: 1;
+}
+
+.col-score,
+.col-time {
+  width: 120rpx;
+  text-align: center;
+}
+
+.ranking-index {
+  position: relative;
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top-rank {
+  color: transparent;
+}
+
+.medal {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  margin-right: 12rpx;
+}
+
+.placeholder {
+  color: #C4BEB4;
+}
+
+.my-ranking {
+  position: fixed;
+  left: 32rpx;
+  right: 32rpx;
+  bottom: 32rpx;
+  padding: 22rpx 24rpx;
+  background: #161616;
+  color: #F5F3EF;
+  border-radius: 999rpx;
+  text-align: center;
+  font-size: 24rpx;
+}

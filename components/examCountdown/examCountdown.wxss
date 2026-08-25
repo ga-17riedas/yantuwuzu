@@ -1,0 +1,38 @@
+.examCountdown {
+  padding: 36rpx 28rpx;
+  border-radius: 24rpx;
+  background: linear-gradient(135deg, #2B4B6B 0%, #3D6A91 100%);
+  color: #fff;
+  box-shadow: 0 12rpx 32rpx rgba(43, 75, 107, 0.22);
+}
+
+.cd-kicker {
+  font-size: 24rpx;
+  letter-spacing: 4rpx;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.cd-row {
+  display: flex;
+  align-items: baseline;
+  margin-top: 12rpx;
+}
+
+.cd-num {
+  font-size: 64rpx;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #F3E9C8;
+}
+
+.cd-unit {
+  margin-left: 10rpx;
+  font-size: 28rpx;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.cd-label {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: rgba(255, 255, 255, 0.78);
+}

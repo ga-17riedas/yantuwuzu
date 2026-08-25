@@ -1,0 +1,16 @@
+<view class="page hot-page">
+  <view class="head-title">热门院校</view>
+  <view class="list">
+    <view class="school-item" wx:for="{{schools}}" wx:key="schoolname">
+      <view class="rank {{index < 3 ? 'top' : ''}}">{{index + 1}}</view>
+      <view class="info">
+        <view class="name">{{item.schoolname}}</view>
+        <view>
+          <text class="yt-chip yt-chip-accent">{{item.title}}</text>
+          <text class="yt-chip">{{item.type}}</text>
+          <text class="yt-chip">{{item.pinggu}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

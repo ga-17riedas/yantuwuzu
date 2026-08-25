@@ -1,0 +1,44 @@
+.hot-page {
+  padding: 16rpx 32rpx 40rpx;
+}
+
+.head-title {
+  margin: 8rpx 0 20rpx;
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.list {
+  background: #fff;
+  border-radius: 28rpx;
+  overflow: hidden;
+}
+
+.school-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 28rpx 24rpx;
+  margin-bottom: 0;
+  border-bottom: 1rpx solid #F0ECE6;
+}
+
+.rank {
+  width: 56rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+  color: #C4BEB4;
+}
+
+.rank.top {
+  color: #E24B2D;
+}
+
+.info {
+  flex: 1;
+}
+
+.name {
+  margin-bottom: 8rpx;
+  font-size: 32rpx;
+  font-weight: 700;
+}

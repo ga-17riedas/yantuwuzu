@@ -1,0 +1,31 @@
+<view class="page chart-page">
+  <view class="yt-card ranking-card">
+    <view class="ranking-header">
+      <text class="col-rank">排名</text>
+      <text class="col-user">考生</text>
+      <text class="col-score">分数</text>
+      <text class="col-time">用时</text>
+    </view>
+    <block wx:for="{{indices}}" wx:key="*this">
+      <view class="ranking-item">
+        <view class="col-rank ranking-index">
+          <text class="{{index < 3 ? 'top-rank' : ''}}">{{index + 1}}</text>
+          <image wx:if="{{index === 0}}" class="medal" src="/images/chart/第一.png"></image>
+          <image wx:if="{{index === 1}}" class="medal" src="/images/chart/第二.png"></image>
+          <image wx:if="{{index === 2}}" class="medal" src="/images/chart/第三.png"></image>
+        </view>
+        <view class="col-user user-info">
+          <image wx:if="{{rankings[index]}}" class="avatar" src="{{rankings[index].avatarUrl}}"></image>
+          <text wx:if="{{rankings[index]}}">{{rankings[index].nickname}}</text>
+          <text wx:else class="placeholder">虚位以待</text>
+        </view>
+        <text class="col-score">{{rankings[index] ? rankings[index].score : '--'}}</text>
+        <text class="col-time">{{rankings[index] ? rankings[index].time : '--'}}</text>
+      </view>
+    </block>
+  </view>
+  <view class="my-ranking">
+    <text wx:if="{{myRanking === '未上榜'}}">我的排名：未上榜</text>
+    <text wx:else>我的排名：{{myRanking}}　分数：{{myScore}}　用时：{{myTime}}</text>
+  </view>
+</view>

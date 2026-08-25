@@ -1,0 +1,19 @@
+<view class="page quiz-page">
+  <view class="yt-card quiz-card">
+    <view class="header">
+      <text wx:if="{{!loggedIn}}">请先登录后再查看错题</text>
+      <text wx:elif="{{totalQuestions === 0}}">所有错题均已刷完</text>
+      <text wx:else>错题 {{currentQuestionIndex + 1}} / {{totalQuestions}}</text>
+    </view>
+    <view class="question" wx:if="{{loggedIn && totalQuestions > 0}}">
+      <view class="q-type">{{currentQuestion.cttx}}</view>
+      <view class="q-title">{{currentQuestion.cttg}}</view>
+      <block wx:for="{{currentQuestion.ctxx}}" wx:key="*this">
+        <button bindtap="selectOption" data-option="{{item}}" class="option-button {{selectedOption === item ? 'selected' : ''}}">
+          {{item}}
+        </button>
+      </block>
+      <button class="yt-btn" bindtap="nextQuestion">下一题</button>
+    </view>
+  </view>
+</view>

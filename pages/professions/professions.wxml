@@ -1,0 +1,23 @@
+<view class="page list-page">
+  <view class="yt-search">
+    <image src="/images/search.png"></image>
+    <input type="text" placeholder="搜索专业、门类或学科" bindinput="onSearchInput" confirm-type="search" bindconfirm="onSearch"/>
+    <view class="yt-search-btn" bindtap="onSearch">搜索</view>
+  </view>
+
+  <view class="list">
+    <view class="list-item" wx:for="{{professions}}" wx:key="profession_number" bindtap="goToDetail" data-profession="{{item.profession_name}}">
+      <view class="mark">{{item.mark}}</view>
+      <view class="list-body">
+        <view class="list-title">{{item.profession_name}}</view>
+        <view class="list-sub">{{item.profession_type}}</view>
+        <view>
+          <text class="yt-chip" wx:if="{{item.menlei}}">{{item.menlei}}</text>
+          <text class="yt-chip yt-chip-accent" wx:if="{{item.yijixueke}}">{{item.yijixueke}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{loadMore}}" class="loading">上拉加载更多</view>
+  <view wx:if="{{loadAll}}" class="loading">已经到底了</view>
+</view>

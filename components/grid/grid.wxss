@@ -1,0 +1,26 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12rpx 0 4rpx;
+}
+
+.grid-item {
+  width: 33.33%;
+  padding: 28rpx 0 12rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-item-image {
+  width: 72rpx;
+  height: 72rpx;
+  pointer-events: none;
+}
+
+.grid-item-text {
+  margin-top: 12rpx;
+  font-size: 24rpx;
+  color: #161616;
+}

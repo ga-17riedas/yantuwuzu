@@ -1,0 +1,8 @@
+{
+  "name": "yantuwuzu",
+  "private": true,
+  "description": "在仓库根目录执行 npm start 即可启动本地后端",
+  "scripts": {
+    "start": "npm start --prefix server"
+  }
+}

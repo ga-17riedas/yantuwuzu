@@ -1,0 +1,61 @@
+.list-page {
+  padding: 16rpx 32rpx 40rpx;
+}
+
+.filter-bar {
+  display: flex;
+  margin: 20rpx 0 8rpx;
+}
+
+.filter-item {
+  flex: 1;
+  margin-right: 12rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  text-align: center;
+  background: #fff;
+  border-radius: 14rpx;
+  font-size: 24rpx;
+  color: #6F6A63;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0 8rpx;
+}
+
+.filter-item:last-child {
+  margin-right: 0;
+}
+
+.list {
+  background: #fff;
+  border-radius: 28rpx;
+  overflow: hidden;
+}
+
+.list-item {
+  display: flex;
+  padding: 28rpx 24rpx;
+  border-bottom: 1rpx solid #F0ECE6;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.list-body {
+  flex: 1;
+  margin-left: 20rpx;
+  min-width: 0;
+}
+
+.list-title {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.list-sub {
+  margin-top: 6rpx;
+  font-size: 22rpx;
+  color: #8A857C;
+}

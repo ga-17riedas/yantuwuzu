@@ -1,3 +1,37 @@
-“研途无阻开发”文件夹中包含云函数 ，页面代码和组件代码。
-“研途无阻云开发数据库”文件夹包含本小程序全部数据库文件，均为json文件可直接导入云数据库
-在云数据库和云后台需要创建user chart cuoti 集合
+研途无阻已从微信云开发改为本地后端。
+
+更完整的说明见仓库根目录 README.md。
+
+目录说明：
+- 仓库根目录即为微信小程序（app.js、pages、components 等）
+- server/     本地后端（Node.js + Express + SQLite）
+- database/   种子数据（JSON，按行存储）
+
+启动后端：
+1. 安装 Node.js 18 或以上
+2. 双击仓库根目录的「启动后端.bat」
+   或在终端执行：cd D:\yantuwuzu    然后    npm start
+   默认地址：http://127.0.0.1:3000
+3. 看到「研途无阻本地后端已启动」即可。这个窗口要一直开着
+4. 如果提示端口被占用：多半是后端已经在跑，浏览器打开 http://127.0.0.1:3000/health 能看到 {"ok":true} 就不用再启一遍
+
+启动小程序：
+1. 用微信开发者工具打开 D:\yantuwuzu
+2. 详情 -> 本地设置 -> 勾选「不校验合法域名、web-view（业务域名）、TLS 版本以及 HTTPS 证书」
+3. 真机调试时，把 utils/config.js 里的 BASE_URL 改成电脑局域网 IP，例如 http://192.168.1.8:3000
+
+数据说明：
+- 题库、专业目录、热门院校会从 database/ 自动导入
+- 仓库中没有完整的院校库 yx / yx_more / zy_more 时，后端会写入一批示例数据，保证页面可跑通
+- 若你有完整 JSON，放到 database/yx.json、database/yx_more.json、database/zy_more.json 后，在 server/.env 设置 FORCE_SEED=1 再执行 npm start 重新导入
+- 用户、排行榜、错题集会在首次使用时自动写入 SQLite（server/data/yantuwuzu.db）
+
+正式环境微信登录：
+在 server/.env 填写 WECHAT_APPID 和 WECHAT_APPSECRET 后，会走微信 jscode2session。
+本地未填写 AppSecret 时，使用稳定的本地 openid，方便开发调试。
+
+AI 择校（DeepSeek）：
+1. 打开 https://platform.deepseek.com/ 创建 API Key
+2. 把 Key 填进 server/.env 的 DEEPSEEK_API_KEY
+3. 重启 npm start
+未填写 Key 时，仍会按院校库做冲刺/稳妥/保底筛选，只是报告为规则生成。

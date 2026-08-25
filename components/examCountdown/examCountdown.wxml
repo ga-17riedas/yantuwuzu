@@ -1,0 +1,8 @@
+<view class="examCountdown">
+  <view class="cd-kicker">考研倒计时</view>
+  <view class="cd-row">
+    <text class="cd-num">{{countdown}}</text>
+    <text class="cd-unit" wx:if="{{!ended}}">天</text>
+  </view>
+  <view class="cd-label">{{label}}</view>
+</view>

@@ -1,0 +1,38 @@
+.article-page {
+  padding: 24rpx 24rpx 48rpx;
+}
+
+.article-card {
+  padding: 36rpx 32rpx;
+}
+
+.title {
+  margin-bottom: 28rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+  color: #161616;
+}
+
+.section {
+  margin-bottom: 28rpx;
+}
+
+.heading {
+  margin-bottom: 10rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+  color: #161616;
+}
+
+.content {
+  color: #5C574F;
+  font-size: 28rpx;
+  line-height: 1.75;
+}
+
+.footer {
+  margin-top: 12rpx;
+  text-align: center;
+  color: #8A94A6;
+  font-size: 24rpx;
+}

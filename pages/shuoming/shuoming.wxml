@@ -1,0 +1,12 @@
+<view class="page article-page">
+  <view class="yt-card article-card">
+    <view class="title">{{title}}</view>
+    <view class="content lead" wx:if="{{content}}">{{content}}</view>
+    <block wx:for="{{sections}}" wx:key="heading">
+      <view class="section">
+        <view class="heading">{{item.heading}}</view>
+        <view class="content">{{item.content}}</view>
+      </view>
+    </block>
+  </view>
+</view>

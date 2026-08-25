@@ -1,0 +1,62 @@
+.lib-page {
+  padding: 8rpx 32rpx 48rpx;
+}
+
+.page-intro {
+  padding: 12rpx 0 28rpx;
+}
+
+.page-title {
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.page-desc {
+  margin-top: 8rpx;
+  font-size: 26rpx;
+  color: #8A857C;
+}
+
+.menu {
+  background: #fff;
+  border-radius: 28rpx;
+  overflow: hidden;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 28rpx 24rpx;
+  border-bottom: 1rpx solid #F0ECE6;
+}
+
+.menu-item.last {
+  border-bottom: none;
+}
+
+.menu-icon {
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 20rpx;
+}
+
+.menu-text {
+  flex: 1;
+}
+
+.menu-title {
+  font-size: 30rpx;
+  font-weight: 650;
+}
+
+.menu-desc {
+  margin-top: 4rpx;
+  font-size: 22rpx;
+  color: #8A857C;
+}
+
+.chev {
+  color: #C4BEB4;
+  font-size: 40rpx;
+  line-height: 1;
+}

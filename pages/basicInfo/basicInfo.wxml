@@ -1,0 +1,22 @@
+<view class="page form-page">
+  <view class="yt-card form-card">
+    <view class="info-item">
+      <text class="label">年级</text>
+      <picker mode="selector" range="{{grades}}" value="{{gradeIndex}}" bindchange="bindGradeChange">
+        <view class="form-field">{{grades[gradeIndex]}}</view>
+      </picker>
+    </view>
+    <view class="info-item">
+      <text class="label">目标院校</text>
+      <input class="form-field" placeholder="搜索院校" bindinput="onSearchInput" />
+      <picker mode="selector" range="{{filteredSchools}}" range-key="schoolname" value="{{schoolIndex}}" bindchange="bindSchoolChange">
+        <view class="form-field">{{filteredSchools[schoolIndex].schoolname || '请选择'}}</view>
+      </picker>
+    </view>
+    <view class="info-item">
+      <text class="label">目前在读学校</text>
+      <input class="form-field" value="{{userInfo.currentSchool}}" bindblur="saveField" data-field="currentSchool" placeholder="请输入在读学校" />
+    </view>
+    <button class="yt-btn" bindtap="saveAllInfo">保存</button>
+  </view>
+</view>

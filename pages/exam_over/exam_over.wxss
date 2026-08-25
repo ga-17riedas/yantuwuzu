@@ -1,0 +1,82 @@
+.result-page {
+  padding: 24rpx 24rpx 60rpx;
+}
+
+.summary-card {
+  padding: 36rpx 28rpx;
+  background: #161616;
+  color: #F5F3EF;
+}
+
+.summary-title {
+  text-align: center;
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.score-row {
+  display: flex;
+  margin-top: 28rpx;
+}
+
+.score-block {
+  flex: 1;
+  text-align: center;
+}
+
+.score-num {
+  display: block;
+  font-size: 56rpx;
+  font-weight: 700;
+  color: #E24B2D;
+}
+
+.score-label {
+  font-size: 24rpx;
+  opacity: 0.8;
+}
+
+.section-label {
+  margin: 28rpx 8rpx 12rpx;
+  font-weight: 700;
+}
+
+.question-card {
+  padding: 28rpx;
+  margin-bottom: 16rpx;
+}
+
+.q-title {
+  font-size: 28rpx;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.q-type {
+  margin: 8rpx 0 12rpx;
+  color: #8A94A6;
+  font-size: 24rpx;
+}
+
+.option-line,
+.answer-line {
+  margin-bottom: 8rpx;
+  font-size: 26rpx;
+  color: #4B5565;
+}
+
+.ok {
+  color: #1F7A4D;
+}
+
+.bad {
+  color: #B42318;
+}
+
+.add-btn {
+  margin-top: 16rpx;
+}
+
+.rank-btn {
+  margin-top: 12rpx;
+}

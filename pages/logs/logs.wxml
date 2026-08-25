@@ -1,0 +1,38 @@
+<view class="page me-page">
+  <view class="me-head">
+    <image class="avatar" wx:if="{{username}}" src="{{userprofile}}" bindtap="logout"></image>
+    <view class="avatar fallback" wx:else>研</view>
+    <view class="me-meta">
+      <view class="me-name">{{username || '未登录'}}</view>
+      <view class="me-desc" wx:if="{{username}}">点击头像可退出</view>
+      <view class="me-desc" wx:else>登录后成绩可以上榜</view>
+    </view>
+    <button wx:if="{{!username}}" class="login-mini" bindtap="login">登录</button>
+  </view>
+
+  <view class="menu">
+    <button class="menu-item" bindtap="gotoBasicInfo">
+      <text>基本信息</text>
+      <text class="chev">›</text>
+    </button>
+    <button class="menu-item" bindtap="gotoShuoming">
+      <text>使用说明</text>
+      <text class="chev">›</text>
+    </button>
+    <button class="menu-item last" bindtap="gotoWomen">
+      <text>关于我们</text>
+      <text class="chev">›</text>
+    </button>
+  </view>
+
+  <view class="menu">
+    <button class="menu-item" open-type="share">
+      <text>分享给同学</text>
+      <text class="chev">›</text>
+    </button>
+    <button class="menu-item last" open-type="contact">
+      <text>在线客服</text>
+      <text class="chev">›</text>
+    </button>
+  </view>
+</view>

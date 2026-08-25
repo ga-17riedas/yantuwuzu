@@ -1,0 +1,64 @@
+<view class="page home">
+  <view class="home-top">
+    <view class="greet">{{greeting}}</view>
+    <view class="greet-sub">离 2027 考研还有 <text class="days">{{days}}</text> 天</view>
+  </view>
+
+  <view class="yt-search" bindtap="searcher">
+    <image src="/images/search.png"></image>
+    <text class="search-placeholder">搜学校、搜专业</text>
+  </view>
+
+  <view class="notice-list">
+    <view class="notice-bar" wx:for="{{notices}}" wx:key="id" bindtap="goNotice">
+      <text class="notice-tag">声明</text>
+      <view class="notice-viewport">
+        <view class="notice-track" style="animation-duration: {{item.duration}}s;">
+          <text class="notice-text">{{item.text}}</text>
+          <text class="notice-text">{{item.text}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class="banner-wrap">
+    <swiper class="banner" indicator-dots indicator-color="rgba(0,0,0,0.15)" indicator-active-color="#E24B2D" autoplay interval="3800" circular>
+      <swiper-item>
+        <image src="/images/index_swiper/首页轮播图1.png" mode="aspectFill"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/index_swiper/首页轮播图2.png" mode="aspectFill"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="/images/index_swiper/首页轮播图3.jpeg" mode="aspectFill"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="home-main">
+    <Grid />
+
+    <view class="cta-row">
+      <view class="cta cta-exam" bindtap="goExam">
+        <view class="cta-title">模拟考试</view>
+        <view class="cta-desc">20 题 · 30 分钟</view>
+      </view>
+      <view class="cta cta-ai" bindtap="goAI">
+        <view class="cta-title">AI 择校</view>
+        <view class="cta-desc">按模拟分数推荐</view>
+      </view>
+    </view>
+
+    <view class="section-head">
+      <text class="section-title">热门院校</text>
+      <text class="section-more" bindtap="goHot">全部</text>
+    </view>
+    <scroll-view scroll-x class="hot-scroll" enhanced show-scrollbar="{{false}}">
+      <view class="hot-card" wx:for="{{hotSchools}}" wx:key="_id" bindtap="goHot">
+        <view class="hot-rank">{{index + 1}}</view>
+        <view class="hot-name">{{item.schoolname}}</view>
+        <view class="hot-meta">{{item.pinggu}} · {{item.type}}</view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

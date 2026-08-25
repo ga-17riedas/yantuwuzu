@@ -1,0 +1,76 @@
+.ai-page {
+  padding: 24rpx 32rpx 48rpx;
+}
+
+.form-card,
+.school-item,
+.report-card {
+  padding: 32rpx 28rpx;
+  margin-bottom: 16rpx;
+}
+
+.form-title {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.form-desc {
+  margin: 10rpx 0 28rpx;
+  color: #8A857C;
+  font-size: 26rpx;
+}
+
+.form-field {
+  margin-bottom: 16rpx;
+  padding: 0 24rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #F5F3EF;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+}
+
+.report-head {
+  display: flex;
+  align-items: center;
+}
+
+.ai-tag {
+  margin-left: 12rpx;
+  padding: 4rpx 12rpx;
+  border-radius: 8rpx;
+  background: #FDE8E2;
+  color: #C0371D;
+  font-size: 20rpx;
+}
+
+.ai-tag.ghost {
+  background: #F5F3EF;
+  color: #8A857C;
+}
+
+.report-text {
+  display: block;
+  margin-top: 16rpx;
+  white-space: pre-wrap;
+  color: #5C574F;
+  font-size: 26rpx;
+  line-height: 1.75;
+}
+
+.group-label {
+  margin: 12rpx 8rpx 12rpx;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+
+.school-name {
+  font-size: 32rpx;
+  font-weight: 700;
+}
+
+.school-meta {
+  margin-top: 8rpx;
+  color: #8A857C;
+  font-size: 26rpx;
+}

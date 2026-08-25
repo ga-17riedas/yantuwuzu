@@ -1,0 +1,24 @@
+.exam-begin {
+  padding: 32rpx;
+}
+
+.intro-card {
+  padding: 40rpx 32rpx;
+}
+
+.intro-title {
+  margin-bottom: 28rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.intro-item {
+  margin-bottom: 18rpx;
+  color: #5C574F;
+  font-size: 28rpx;
+  line-height: 1.7;
+}
+
+.start-btn {
+  margin-top: 40rpx;
+}

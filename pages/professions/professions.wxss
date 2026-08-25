@@ -1,0 +1,43 @@
+.list-page {
+  padding: 16rpx 32rpx 40rpx;
+}
+
+.yt-search {
+  margin-bottom: 20rpx;
+}
+
+.list {
+  background: #fff;
+  border-radius: 28rpx;
+  overflow: hidden;
+}
+
+.list-item {
+  display: flex;
+  padding: 28rpx 24rpx;
+  border-bottom: 1rpx solid #F0ECE6;
+}
+
+.list-body {
+  flex: 1;
+  margin-left: 20rpx;
+  min-width: 0;
+}
+
+.list-title {
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.list-sub {
+  margin-top: 6rpx;
+  font-size: 22rpx;
+  color: #8A857C;
+}
+
+.loading {
+  padding: 28rpx;
+  text-align: center;
+  color: #A39E96;
+  font-size: 24rpx;
+}

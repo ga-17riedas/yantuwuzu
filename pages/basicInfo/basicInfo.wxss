@@ -1,0 +1,28 @@
+.form-page {
+  padding: 24rpx 32rpx;
+}
+
+.form-card {
+  padding: 32rpx 28rpx;
+}
+
+.info-item {
+  margin-bottom: 28rpx;
+}
+
+.label {
+  display: block;
+  margin-bottom: 12rpx;
+  font-size: 26rpx;
+  font-weight: 600;
+  color: #8A857C;
+}
+
+.form-field {
+  height: 88rpx;
+  line-height: 88rpx;
+  padding: 0 24rpx;
+  background: #F5F3EF;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+}

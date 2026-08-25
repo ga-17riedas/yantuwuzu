@@ -1,0 +1,33 @@
+<view class="page list-page">
+  <view class="yt-search">
+    <image src="/images/search.png"></image>
+    <input type="text" placeholder="搜索院校" bindinput="onSearchInput" confirm-type="search" bindconfirm="onSearch"/>
+    <view class="yt-search-btn" bindtap="onSearch">搜索</view>
+  </view>
+
+  <view class="filter-bar">
+    <picker mode="selector" range="{{addressList}}" bindchange="onAddressChange">
+      <view class="filter-item">{{selectedAddress}}</view>
+    </picker>
+    <picker mode="selector" range="{{belongList}}" bindchange="onBelongChange">
+      <view class="filter-item">{{selectedBelong}}</view>
+    </picker>
+    <picker mode="selector" range="{{titleList}}" bindchange="onTitleChange">
+      <view class="filter-item">{{selectedTitle}}</view>
+    </picker>
+  </view>
+
+  <view class="list">
+    <view class="list-item" wx:for="{{schools}}" wx:key="_id" bindtap="onSchoolTap" data-id="{{item._id}}">
+      <view class="mark">{{item.mark}}</view>
+      <view class="list-body">
+        <view class="list-title">{{item.schoolname}}</view>
+        <view class="list-sub">{{item.schooladdress}} · {{item.belong}}</view>
+        <view>
+          <text class="yt-chip">{{item.type}}</text>
+          <text class="yt-chip yt-chip-accent">{{item.title}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

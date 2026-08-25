@@ -1,0 +1,36 @@
+<view class="page exam-page">
+  <view class="exam-header yt-card">
+    <text>{{questions[currentQuestionIndex].tx || '单选题'}}</text>
+    <text class="countdown">{{minutes}}:{{seconds}}</text>
+    <text>第 {{currentQuestionIndex + 1}} 题</text>
+  </view>
+
+  <view class="yt-card exam-card" wx:if="{{questions.length > 0}}">
+    <view class="question-text">{{questions[currentQuestionIndex].number}}. {{questions[currentQuestionIndex].tg}}</view>
+    <view class="options">
+      <block wx:for="{{questions[currentQuestionIndex].xx}}" wx:key="*this">
+        <button bindtap="selectOption" data-option="{{item}}" class="option-button {{selectedOptions[currentQuestionIndex] === item ? 'selected' : ''}}">
+          {{item}}
+        </button>
+      </block>
+    </view>
+  </view>
+
+  <view class="exam-actions">
+    <button class="yt-btn yt-btn-ghost" bindtap="toggleNavigation">题目导航</button>
+    <button class="yt-btn" bindtap="submitExam">交卷</button>
+  </view>
+
+  <view class="nav-mask" wx:if="{{showNavigation}}" bindtap="toggleNavigation"></view>
+  <view class="nav-sheet yt-card" wx:if="{{showNavigation}}">
+    <view class="nav-title">答题卡</view>
+    <view class="navigation">
+      <block wx:for="{{questions}}" wx:key="number">
+        <button bindtap="navigateToQuestion" data-index="{{index}}" class="nav-dot {{selectedOptions[index] ? 'answered' : ''}} {{currentQuestionIndex === index ? 'current' : ''}}">
+          {{index + 1}}
+        </button>
+      </block>
+    </view>
+    <button class="yt-btn" bindtap="toggleNavigation">收起</button>
+  </view>
+</view>

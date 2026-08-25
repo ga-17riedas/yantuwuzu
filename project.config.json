@@ -1,0 +1,57 @@
+{
+  "appid": "wx63b409c1ca6524b5",
+  "compileType": "miniprogram",
+  "libVersion": "3.4.2",
+  "packOptions": {
+    "ignore": [
+      { "type": "folder", "value": "server" },
+      { "type": "folder", "value": "database" },
+      { "type": "folder", "value": "cloudfunctions" },
+      { "type": "folder", "value": "node_modules" },
+      { "type": "folder", "value": ".git" },
+      { "type": "folder", "value": ".cloudbase" },
+      { "type": "file", "value": "说明.txt" },
+      { "type": "file", "value": "启动后端.bat" },
+      { "type": "file", "value": "package.json" },
+      { "type": "suffix", "value": ".docx" },
+      { "type": "suffix", "value": ".md" }
+    ],
+    "include": []
+  },
+  "setting": {
+    "coverView": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "checkSiteMap": false,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmRelationList": [],
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "uglifyFileName": true,
+    "condition": true,
+    "ignoreUploadUnusedFiles": true,
+    "urlCheck": false
+  },
+  "permissions": {
+    "scope.userInfo": {
+      "desc": "获取您的公开信息（昵称、头像等）"
+    }
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  }
+}

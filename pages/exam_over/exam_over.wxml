@@ -1,0 +1,28 @@
+<view class="page result-page">
+  <view class="yt-card summary-card">
+    <view class="summary-title">考试结束</view>
+    <view class="score-row">
+      <view class="score-block">
+        <text class="score-num">{{score}}</text>
+        <text class="score-label">得分</text>
+      </view>
+      <view class="score-block">
+        <text class="score-num">{{time}}</text>
+        <text class="score-label">用时（秒）</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="section-label">答题详情</view>
+  <block wx:for="{{questions}}" wx:key="_id">
+    <view class="yt-card question-card">
+      <view class="q-title">{{index + 1}}. {{item.tg}}</view>
+      <view class="q-type">{{item.tx}}</view>
+      <view class="option-line" wx:for="{{item.xx}}" wx:for-item="opt" wx:key="*this">{{opt}}</view>
+      <view class="answer-line">正确答案：{{item.zqda}}</view>
+      <view class="answer-line {{item.userAnswer === item.zqda ? 'ok' : 'bad'}}">我的答案：{{item.userAnswer}}（{{item.userAnswer === item.zqda ? '正确' : '错误'}}）</view>
+      <button class="yt-btn yt-btn-ghost add-btn" bindtap="addToCuoti" data-question="{{item}}">加入错题集</button>
+    </view>
+  </block>
+  <button class="yt-btn rank-btn" bindtap="viewRankings">查看排行榜</button>
+</view>

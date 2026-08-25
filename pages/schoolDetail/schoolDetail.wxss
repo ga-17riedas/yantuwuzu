@@ -1,0 +1,79 @@
+.detail-page {
+  padding: 24rpx 32rpx 48rpx;
+}
+
+.info-card,
+.content-card {
+  padding: 32rpx 28rpx;
+  margin-bottom: 20rpx;
+}
+
+.school-title {
+  margin-bottom: 20rpx;
+  font-size: 44rpx;
+  font-weight: 700;
+}
+
+.info-row {
+  display: flex;
+  margin-bottom: 12rpx;
+  font-size: 26rpx;
+}
+
+.info-row text:first-child {
+  width: 128rpx;
+  color: #8A857C;
+  flex-shrink: 0;
+}
+
+.info-row text:last-child {
+  flex: 1;
+  color: #161616;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 20rpx;
+  padding: 6rpx;
+  background: #fff;
+  border-radius: 18rpx;
+}
+
+.tab {
+  flex: 1;
+  height: 68rpx;
+  line-height: 68rpx;
+  text-align: center;
+  border-radius: 14rpx;
+  font-size: 28rpx;
+  color: #8A857C;
+}
+
+.tab.active {
+  background: #161616;
+  color: #fff;
+  font-weight: 600;
+}
+
+.list-search {
+  margin-bottom: 20rpx;
+}
+
+.card-heading {
+  margin-bottom: 12rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}
+
+.card-body {
+  color: #5C574F;
+  font-size: 26rpx;
+  line-height: 1.75;
+  white-space: pre-wrap;
+}
+
+.item-title {
+  margin-bottom: 16rpx;
+  font-size: 30rpx;
+  font-weight: 700;
+}

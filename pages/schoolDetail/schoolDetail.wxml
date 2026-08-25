@@ -1,0 +1,51 @@
+<view class="page detail-page">
+  <view class="yt-card info-card">
+    <view class="school-title">{{school.schoolname}}</view>
+    <view class="info-row"><text>地址</text><text>{{school.schooladdress}}</text></view>
+    <view class="info-row"><text>隶属</text><text>{{school.belong}}</text></view>
+    <view class="info-row"><text>类型</text><text>{{school.type}}</text></view>
+    <view class="info-row"><text>性质</text><text>{{school.title}}</text></view>
+    <view class="info-row"><text>官网</text><text>{{school.website}}</text></view>
+  </view>
+
+  <view class="tabs">
+    <view class="tab {{currentTab === 'jianjie' ? 'active' : ''}}" bindtap="switchTab" data-tab="jianjie">院校简介</view>
+    <view class="tab {{currentTab === 'zhaosheng' ? 'active' : ''}}" bindtap="switchTab" data-tab="zhaosheng">招生专业</view>
+  </view>
+
+  <view wx:if="{{currentTab === 'jianjie'}}">
+    <view class="yt-card content-card">
+      <view class="card-heading">{{school.jianjie}}</view>
+      <view class="card-body">{{school.jianjie_neirong}}</view>
+    </view>
+    <view class="yt-card content-card">
+      <view class="card-heading">{{school.lingdao}}</view>
+      <view class="card-body">{{school.lingdao_neirong}}</view>
+    </view>
+    <view class="yt-card content-card">
+      <view class="card-heading">{{school.huanjing}}</view>
+      <view class="card-body">{{school.huanjing_neirong}}</view>
+    </view>
+  </view>
+
+  <view wx:if="{{currentTab === 'zhaosheng'}}">
+    <view class="yt-search list-search">
+      <image src="/images/search.png"></image>
+      <input type="text" placeholder="搜索专业名称" bindinput="onSearchInput" confirm-type="search" bindconfirm="onSearch"/>
+      <view class="yt-search-btn" bindtap="onSearch">搜索</view>
+    </view>
+    <view class="yt-card content-card" wx:for="{{majors}}" wx:key="_id">
+      <view class="item-title">{{item.major}}</view>
+      <view class="info-row"><text>开设院校</text><text>{{item.schoolname}}</text></view>
+      <view class="info-row"><text>门类</text><text>{{item.menlei}}</text></view>
+      <view class="info-row"><text>一级学科</text><text>{{item.yijixueke}}</text></view>
+      <view class="info-row"><text>学习方式</text><text>{{item.learn_type}}</text></view>
+      <view class="info-row"><text>考试方式</text><text>{{item.exam_style}}</text></view>
+      <view class="info-row"><text>拟录取</text><text>{{item.enrollment}}</text></view>
+      <view class="info-row"><text>专业课 1</text><text>{{item.class1}}</text></view>
+      <view class="info-row"><text>专业课 2</text><text>{{item.class2}}</text></view>
+      <view class="info-row"><text>外语</text><text>{{item.language}}</text></view>
+      <view class="info-row"><text>政治</text><text>{{item.political}}</text></view>
+    </view>
+  </view>
+</view>

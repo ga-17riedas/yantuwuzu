@@ -1,0 +1,41 @@
+<view class="page lib-page">
+  <view class="page-intro">
+    <view class="page-title">信息库</view>
+    <view class="page-desc">先把学校和专业看清楚，再决定往哪走。</view>
+  </view>
+
+  <view class="menu">
+    <navigator url="/pages/schools/schools" class="menu-item">
+      <image class="menu-icon" src="/images/index_grid/院校.png" mode="aspectFit"></image>
+      <view class="menu-text">
+        <view class="menu-title">院校库</view>
+        <view class="menu-desc">按地区、隶属和层次筛选高校</view>
+      </view>
+      <text class="chev">›</text>
+    </navigator>
+    <navigator url="/pages/professions/professions" class="menu-item">
+      <image class="menu-icon" src="/images/index_grid/专业.png" mode="aspectFit"></image>
+      <view class="menu-text">
+        <view class="menu-title">专业库</view>
+        <view class="menu-desc">门类、学科与招生方向</view>
+      </view>
+      <text class="chev">›</text>
+    </navigator>
+    <navigator url="/pages/AI_choice/AI_choice" class="menu-item">
+      <image class="menu-icon" src="/images/index_grid/ai.png" mode="aspectFit"></image>
+      <view class="menu-text">
+        <view class="menu-title">AI 择校</view>
+        <view class="menu-desc">按模拟分数和地区给建议</view>
+      </view>
+      <text class="chev">›</text>
+    </navigator>
+    <navigator url="/pages/hot_school/hot_school" class="menu-item last">
+      <image class="menu-icon" src="/images/index_grid/咨讯.png" mode="aspectFit"></image>
+      <view class="menu-text">
+        <view class="menu-title">热门院校</view>
+        <view class="menu-desc">近年关注更高的学校</view>
+      </view>
+      <text class="chev">›</text>
+    </navigator>
+  </view>
+</view>
